@@ -1,0 +1,71 @@
+<html>
+	<head>
+			<title>SMJK Phor Tay</title>
+            <link rel="icon" href="images/SMJKPT logo.jpg"/>
+			<link rel="stylesheet" type="text/css" href="style.css" />
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+				<h1 onmouseover="style.color='red'" onmouseout="style.color='black'">SMJK Phor Tay</h1>
+			</div>
+			<div id="content">
+				<div class="btn-time">
+				<button class="button" onclick="document.getElementById('time').innerHTML = Date()">Click me to display Date and Time.</button>
+                    <p id="time"</p>
+                </div>
+				
+				<div class="btn-group">
+				<button class="button" onclick="document.getElementById('main').style.display='none'">Hide Content</button>
+				<button class="button" onclick="document.getElementById('main').style.display='block'">Show Content</button>
+				<button class="button" onclick="document.getElementById('main').style.fontSize='21px'">Increase Font Size</button>
+				<button class="button" onclick="document.getElementById('main').style.fontSize='11px'">Decrease Font Size</button>
+				<button class="button" onclick="document.getElementById('main').style.fontSize='16px'">Default Font Size</button>
+                </div>
+                
+				<div id="nav">
+					<h3 onmouseover="style.color='red'" onmouseout="style.color='black'">Navigation</h3>
+				<nav >				
+				<ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a class="active" href="">Contact</a></li>
+                </ul>
+				</nav>
+				</div>
+
+				<div id="main">
+					<h2 onmouseover="style.color='red'" onmouseout="style.color='black'">Contact</h2>
+						<p>You may contact us at:</p>
+							<p>Click here ---> <a href="https://www.facebook.com/pages/Phor-Tay-High-School/109640769055928" target="_new"><b>Facebook</b></a></p>
+                            <p>Click here ---> <a href="http://www.smjk.edu.my/school/index.php?schid=18" target="_new"><b>Official Website</b></a></p>
+							<p><b>Mailing Address:</b> 731, Jalan Sungai Dua, 11700 Bayan Lepas, Pulau Pinang</p>
+							<h3>Map</h3>
+    						<div id="map"></div>
+								<script>
+                                function initMap() {
+                                    var uluru = {lat: 5.343091, lng: 100.296613};
+                                    var map = new google.maps.Map(document.getElementById('map'), {
+                                      zoom: 18,
+                                      center: uluru
+                                    });
+                                    var marker = new google.maps.Marker({
+                                      position: uluru,
+                                      map: map
+                                    });
+                                  }
+                                </script>
+                                <script async defer
+                                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDb_uz5LD1iPQPruv-bUGMoqPHG53sKwec&callback=initMap">
+                                </script>
+                            <p><b>Telephone/Fax:</b> 04-644 2772/04-645 5772</p>
+                            <p><b>E-Mail:</b> smjkptpp@tm.net.my/phortay@gmail.com</p>
+				</div>
+		</div>
+		<div id="footer">
+			Copyright &copy; 2017 Ch'ng Sin Yi
+		</div>
+	</body>
+</html>

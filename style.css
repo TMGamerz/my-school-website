@@ -1,0 +1,208 @@
+body {
+	font-family: Roboto Mono, Arial;
+	background-image: url("images/Phor Tay School.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#container {
+	background-color: white;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#header {
+	background-color: lightblue;
+	color: blue;
+	text-align: center;
+	width: 800px;
+    height: 50px;
+}
+
+#content {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.btn-time .button {
+    background-color: lightblue;
+    border: 2px solid lightskyblue;
+    color: darkblue;
+    width: 779px;
+    height: 52px;
+    padding: 15px 17.74px;
+    margin-bottom: 8px;
+    position: relative;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+}
+
+.btn-time .button:hover {
+    background-color: lightskyblue;
+}
+
+.btn-time .button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.btn-time .button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.btn-group .button {
+    background-color: lightblue;
+    border: 2px solid lightskyblue;
+    color: darkblue;
+    padding: 15px 17.74px;
+    text-align: center;
+    position: relative;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+}
+.btn-group .button:not(:last-child) {
+    border-right: none; 
+}
+.btn-group .button:hover {
+    background-color: lightskyblue;
+}
+
+.btn-group .button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.btn-group .button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+#nav {
+	height: 600px;
+	width: 150px;
+	float: left;
+	color: black;
+	text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    background-color: #f1f1f1;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    width: 150px;
+    height: 37px;
+}
+
+li a.active {
+    background-color: lightskyblue;
+    color: white;
+    width: 150px;
+    height: 37px;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+#main {
+	width: 600px;
+	float: right;
+}
+
+.gallery {
+    border: 1px solid #ccc;
+}
+
+.gallery:hover {
+    border: 1px solid #000;
+}
+
+.gallery img {
+    width: 166px;
+    height: 110px;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 180px;
+    height: 180px;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#map {
+    width: 600px;
+    height: 400px;
+    background-color: grey;
+}
+
+#footer {
+	clear: both;
+	padding: 10px;
+	background-color: lightblue;
+	color: blue;
+	text-align: right;
+}
