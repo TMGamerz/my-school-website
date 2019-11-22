@@ -1,4 +1,4 @@
-# my-first-website
+# my-school-website
 This is a simple website about my school. I done this at 2017 after PT3 exam.
 
 ## Other resources
