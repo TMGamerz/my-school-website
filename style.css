@@ -193,12 +193,6 @@ li a:hover:not(.active) {
     clear: both;
 }
 
-#map {
-    width: 600px;
-    height: 400px;
-    background-color: grey;
-}
-
 #footer {
 	clear: both;
 	padding: 10px;
